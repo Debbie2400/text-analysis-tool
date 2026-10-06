@@ -1,9 +1,18 @@
-print("\nWelcome to the text analysis tool, I will mine and analyze a body of text from a file you give me.")
+def welcomeUser():
+    # Welcome User
+    print("\nWelcome to the text analysis tool, I will mine and analyze a body of text from a file you give me.")
 
 # Get username
-
-# Print message prompting user to input their name 
-username = input("\nTo begin, please enter your username")
+def getUsername():
+    #Print message prompting user to input their name
+    usernameFromInput = input("\nTo begin, please enter your name:\n")
+    return usernameFromInput
 
 # Greet the user
-print("Hello, " + username)
+def greetUser(name):
+    print("Hello, " + name)
+
+welcomeUser()
+username = getUsername()
+greetUser(username)
+    
